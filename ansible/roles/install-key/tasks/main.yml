@@ -1,0 +1,8 @@
+- name: Copy the public key to hosts
+  ansible.builtin.shell: sshpass -p vagrant ssh-copy-id vagrant@{{ item }}
+  loop:
+    - "prod"
+  register: install_keys
+  failed_when: install_keys.rc != 0 and install_keys.rc != 6
+  #ignore_errors: true
+  tags: [public_keys]

@@ -1,0 +1,33 @@
+dependencies:
+- role: andrewrothstein.unarchive-deps
+  version: v1.2.1
+galaxy_info:
+  author: Andrew Rothstein
+  company: BlackRock
+  description: consul-template
+  galaxy_tags:
+  - development
+  license:
+  - MIT
+  min_ansible_version: 2.0
+  platforms:
+  - name: Alpine
+    versions:
+    - all
+  - name: Archlinux
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - bullseye
+    - buster
+  - name: EL
+    versions:
+    - 8
+  - name: Fedora
+    versions:
+    - 34
+  - name: Ubuntu
+    versions:
+    - bionic
+    - focal
